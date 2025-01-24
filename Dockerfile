@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 RUN echo "Updating Ubuntu"
 RUN apt-get update && apt-get upgrade -y
@@ -41,7 +41,7 @@ RUN git clone https://github.com/catchorg/Catch2.git && \
 		 cmake --build build/ --target install
 
 # Disabled pthread support for GTest due to linking errors
-RUN git clone https://github.com/google/googletest.git --branch release-1.10.0 && \
+RUN git clone https://github.com/google/googletest.git --branch release-1.11.0 && \
         cd googletest && \
         cmake -Bbuild -Dgtest_disable_pthreads=1 && \
         cmake --build build --config Release && \

@@ -1,17 +1,11 @@
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/MacOS/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/Windows/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/Ubuntu/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![codecov](https://codecov.io/gh/filipdutescu/modern-cpp-template/branch/master/graph/badge.svg)](https://codecov.io/gh/filipdutescu/modern-cpp-template)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/filipdutescu/modern-cpp-template)](https://github.com/filipdutescu/modern-cpp-template/releases)
+[![Actions Status](/workflows/MacOS/badge.svg)](/actions)
+[![Actions Status](/workflows/Windows/badge.svg)](/actions)
+[![Actions Status](/workflows/Ubuntu/badge.svg)](/actions)
+[![codecov](https://codecov.io/gh/sytranvn/linapp/branch/master/graph/badge.svg)](https://codecov.io/gh/sytranvn/linapp)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/sytranvn/linapp)](https://github.com/sytranvn/sytranvn/linapp)
+## Check out original modern-cpp-template
 
-# Modern C++ Template
-
-A quick C++ template for modern CMake projects, aimed to be an easy to use
-starting point.
-
-This is my personal take on such a type of template, thus I might not use the
-best practices or you might disagree with how I do things. Any and all feedback
-is greatly appreciated!
+This is dirived template for my personal use. Check out the [original template](https://github.com/filipdutescu/modern-cpp-template) for more.
 
 ## Features
 
@@ -74,15 +68,15 @@ template *as-is*, meaning using the versions recommended here, then you will nee
 ### Installing
 
 It is fairly easy to install the project, all you need to do is clone if from
-[GitHub](https://github.com/filipdutescu/modern-cpp-template) or
-[generate a new repository from it](https://github.com/filipdutescu/modern-cpp-template/generate)
+[GitHub](https://github.com/sytranvn/linapp) or
+[generate a new repository from it](https://github.com/sytranvn/linapp/generate)
 (also on **GitHub**).
 
 If you wish to clone the repository, rather than generate from it, you simply need
 to run:
 
 ```bash
-git clone https://github.com/filipdutescu/modern-cpp-template/
+git clone https://github.com/sytranvn/linapp/
 ```
 
 After finishing getting a copy of the project, with any of the methods above, create
@@ -194,11 +188,11 @@ become a contributor and the process for submitting pull requests to us.
 
 This project makes use of [SemVer](http://semver.org/) for versioning. A list of
 existing versions can be found in the
-[project's releases](https://github.com/filipdutescu/modern-cpp-template/releases).
+[project's releases](https://github.com/sytranvn/linapp/releases).
 
 ## Authors
 
-* **Filip-Ioan Dutescu** - [@filipdutescu](https://github.com/filipdutescu)
+* **Sy Tran** - [@sytranvn](https://github.com/sytranvn)
 
 ## License
 

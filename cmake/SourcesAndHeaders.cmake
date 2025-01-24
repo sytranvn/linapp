@@ -8,7 +8,7 @@ set(exe_sources
 )
 
 set(headers
-    include/project/tmp.hpp
+    include/linapp/tmp.hpp
 )
 
 set(test_sources

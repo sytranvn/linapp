@@ -9,6 +9,7 @@ project(
   LANGUAGES CXX
 )
 
+include(FetchContent)
 verbose_message("Adding tests under ${CMAKE_PROJECT_NAME}Tests...")
 
 foreach(file ${test_sources})
@@ -43,17 +44,26 @@ foreach(file ${test_sources})
   endif()
 
   if(${CMAKE_PROJECT_NAME}_USE_GTEST)
-    find_package(GTest REQUIRED)
+    include(FetchContent)
+    FetchContent_Declare(
+      googletest
+      GIT_REPOSITORY https://github.com/google/googletest.git
+      GIT_TAG release-1.11.0
+      FIND_PACKAGE_ARGS NAMES googletest
+    )
+    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
+    FetchContent_MakeAvailable(googletest)
     if(${CMAKE_PROJECT_NAME}_USE_GOOGLE_MOCK)
       set(GOOGLE_MOCK_LIBRARIES GTest::gmock GTest::gmock_main)
     endif()
 
+    enable_testing()
     target_link_libraries(
       ${test_name}_Tests
       PUBLIC
-        GTest::GTest
-        GTest::Main
+        GTest::gtest_main
+
         ${GOOGLE_MOCK_LIBRARIES}
         ${${CMAKE_PROJECT_NAME}_TEST_LIB}
     )
