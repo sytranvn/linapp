@@ -1,6 +1,6 @@
-[![Actions Status](/workflows/MacOS/badge.svg)](/actions)
-[![Actions Status](/workflows/Windows/badge.svg)](/actions)
-[![Actions Status](/workflows/Ubuntu/badge.svg)](/actions)
+[![Ubuntu](https://github.com/sytranvn/linapp/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/sytranvn/linapp/actions/workflows/ubuntu.yml)
+[![MacOS](https://github.com/sytranvn/linapp/actions/workflows/macos.yml/badge.svg)](https://github.com/sytranvn/linapp/actions/workflows/macos.yml)
+[![Windows](https://github.com/sytranvn/linapp/actions/workflows/windows.yml/badge.svg)](https://github.com/sytranvn/linapp/actions/workflows/windows.yml)
 [![codecov](https://codecov.io/gh/sytranvn/linapp/branch/master/graph/badge.svg)](https://codecov.io/gh/sytranvn/linapp)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/sytranvn/linapp)](https://github.com/sytranvn/sytranvn/linapp)
 ## Check out original modern-cpp-template
