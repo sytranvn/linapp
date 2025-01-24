@@ -12,11 +12,18 @@ OLD_PROJECT=linapp
 DIRS=($(find . -type d -name "*${OLD_PROJECT}*" -not -path './build/*'))
 
 for DIR in ${DIRS[@]}; do
-	echo mv "$DIR" ${DIR/$OLD_PROJECT/$NEW_PROJECT}
+	mv "$DIR" ${DIR/$OLD_PROJECT/$NEW_PROJECT}
 done
 
 FILES=($(git ls-files | grep -v $EXEC))
 for FILE in ${FILES[@]}; do
-	sed -i "s/$OLD_PROJECT/$NEW_PROJECT/g" $FILE
+	if [ -f $FILE ]; then
+	sed -i "s/$OLD_PROJECT/$NEW_PROJECT/g" "$FILE"
+		if [[ "$FILE" = *$OLD_PROJECT* ]]; then
+			mv "$FILE" "${FILE/$OLD_PROJECT/$NEW_PROJECT}"
+		fi
+	fi
 done
-# mv $EXEC ${EXEC}.removed
+
+mv $EXEC ${EXEC}.removed
+git rm --cached $EXEC
